@@ -1,5 +1,3 @@
-# AthenaPOS
-
 # AthenaPOS 📚💳  
 **Point of Sale para Librerías y Papelerías**  
 
