@@ -55,4 +55,11 @@ Desarrollar un sistema de punto de venta especializado en librerías y papelerí
 
 
 
+---
 
+## ⚙️ Instalación y Configuración  
+
+### Clonar el repositorio
+```bash
+git clone https://github.com/tuusuario/athenapos.git
+cd athenapos
