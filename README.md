@@ -49,6 +49,18 @@ Desarrollar un sistema de punto de venta especializado en librerías y papelerí
 
 ---
 
+📌 Roadmap
+
+ - Configuración inicial del backend con Django + DRF.
+ - Modelo de usuarios y roles.
+ - CRUD de productos.
+ - Carrito de ventas y facturación.
+ - Integración frontend-backend.
+ - Reportes de ventas.
+ - Despliegue en producción con Docker.
+
+---
+
 ## 📂 Estructura del Proyecto
 
 
@@ -80,3 +92,13 @@ athenapos/
 ```bash
 git clone https://github.com/tuusuario/athenapos.git
 cd athenapos
+
+Backend
+cd backend
+docker-compose up --build
+
+
+Frontend
+cd frontend
+npm install
+npm run dev
