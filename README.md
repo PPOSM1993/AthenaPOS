@@ -63,69 +63,9 @@ Desarrollar un sistema de punto de venta especializado en librerías y papelerí
 
 ## 📂 Estructura del Proyecto
 
-athenapos/
-│── backend/                  # Django + DRF
-│   ├── athenapos/            # Configuración principal Django
-│   │   ├── settings/         # Settings divididos (base, dev, prod)
-│   │   ├── urls.py
-│   │   ├── wsgi.py
-│   │   └── asgi.py
-│   │
-│   ├── apps/                 # Apps modulares de Django
-│   │   ├── accounts/         # Usuarios y roles
-│   │   ├── products/         # Libros, agendas, juegos, etc.
-│   │   ├── sales/            # Ventas, carrito, boletas/facturas
-│   │   ├── customers/        # Clientes
-│   │   ├── suppliers/        # Proveedores
-│   │   ├── inventory/        # Control de stock
-│   │   └── reports/          # Estadísticas y reportes
-│   │
-│   ├── requirements/         # Requerimientos
-│   │   ├── base.txt
-│   │   ├── dev.txt
-│   │   └── prod.txt
-│   │
-│   ├── manage.py
-│   └── tests/                # Tests generales
-│
-│── frontend/                 # React + Vite
-│   ├── public/
-│   ├── src/
-│   │   ├── assets/           # Imágenes, logos, íconos
-│   │   ├── components/       # Atomic design
-│   │   │   ├── atoms/
-│   │   │   ├── molecules/
-│   │   │   ├── organisms/
-│   │   │   └── templates/
-│   │   ├── pages/            # Páginas principales (Login, Dashboard, etc.)
-│   │   ├── features/         # Funcionalidades (products, sales, customers)
-│   │   ├── hooks/            # Custom hooks (Zustand stores, Tanstack)
-│   │   ├── services/         # API calls (axios + tanstack)
-│   │   ├── styles/           # Tailwind config y global styles
-│   │   ├── routes/           # Configuración de rutas
-│   │   └── main.jsx
-│   │
-│   ├── index.html
-│   ├── package.json
-│   └── vite.config.js
-│
-│── third_party/              # Infraestructura y soporte
-│   ├── docker/               # Archivos Docker
-│   │   ├── backend.Dockerfile
-│   │   ├── frontend.Dockerfile
-│   │   └── docker-compose.yml
-│   │
-│   ├── nginx/
-│   │   └── default.conf      # Configuración Nginx
-│   │
-│   ├── ci_cd/                # GitHub Actions, pipelines
-│   │   └── deploy.yml
-│   │
-│   └── docs/                 # Documentación (Swagger, especificaciones)
-│
-└── README.md
 
 
+<img width="462" height="824" alt="Screenshot from 2025-08-19 16-12-02" src="https://github.com/user-attachments/assets/4d0df590-c24c-4a74-bd38-11397c370cc9" />
 
 
 ---
