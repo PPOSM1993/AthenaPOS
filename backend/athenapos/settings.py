@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'drf_spectacular',
     'apps.authentication',
     'apps.products',
-
+    'apps.customers',
 ]
 
 REST_FRAMEWORK = {

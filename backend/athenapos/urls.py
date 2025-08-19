@@ -7,11 +7,11 @@ from drf_yasg import openapi
 
 schema_view = get_schema_view(
     openapi.Info(
-        title="API de mi App",
-        default_version='v1',
-        description="Documentación de la API con Swagger",
+        title="AthenaPOS API",
+        default_version="v1",
+        description="Documentación del API de AthenaPOS",
         terms_of_service="https://www.google.com/policies/terms/",
-        contact=openapi.Contact(email="tuemail@dominio.com"),
+        contact=openapi.Contact(email="contact@athenapos.local"),
         license=openapi.License(name="BSD License"),
     ),
     public=True,
@@ -19,10 +19,10 @@ schema_view = get_schema_view(
 )
 
 
-
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/authentication/', include('apps.authentication.urls')),
+    path('api/customers/', include('apps.customers.urls')),
 
     # Swagger
     re_path(r'^swagger(?P<format>\.json|\.yaml)$', schema_view.without_ui(cache_timeout=0), name='schema-json'),
