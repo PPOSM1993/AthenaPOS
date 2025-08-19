@@ -52,6 +52,25 @@ Desarrollar un sistema de punto de venta especializado en librerías y papelerí
 ## 📂 Estructura del Proyecto
 
 
+athenapos/
+│── backend/ # API REST con Django + DRF
+│ ├── accounts/ # Usuarios, roles, permisos
+│ ├── products/ # Libros, agendas, accesorios
+│ ├── sales/ # Carrito, facturación y ventas
+│ ├── settings/ # Configuración modular (dev/prod)
+│ └── ...
+│
+│── frontend/ # Interfaz en React + Vite
+│ ├── src/
+│ │ ├── assets/ # Estilos, imágenes, íconos
+│ │ ├── components/ # Atomic design components
+│ │ ├── features/ # Funcionalidades por dominio
+│ │ └── pages/ # Vistas principales
+│
+│── docs/ # Documentación del proyecto
+│── docker-compose.yml
+│── README.md
+
 
 ---
 
