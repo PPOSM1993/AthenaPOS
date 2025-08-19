@@ -86,6 +86,15 @@ athenapos/
 
 ---
 
+🧑‍💻 Autor
+
+Pedro Osorio – Full Stack Developer 🚀
+📧 Contacto: tuemail@correo.com
+
+🌐 GitHub: @tuusuario
+
+---
+
 ## ⚙️ Instalación y Configuración  
 
 ### Clonar el repositorio
