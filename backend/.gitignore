@@ -1,0 +1,65 @@
+# -----------------------
+# Python
+# -----------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.pyo
+*.pyd
+*.log
+*.sqlite3
+
+# Virtual environment
+venv/
+env/
+ENV/
+.venv/
+*.env
+
+# -----------------------
+# Django
+# -----------------------
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.log
+*.sqlite3
+*.mo
+*.py[cod]
+__pycache__/
+db.sqlite3
+media/
+staticfiles/
+node_modules/
+
+# Settings local
+*.env
+settings/local.py
+settings/dev.py
+settings/prod.py
+
+# -----------------------
+# PostgreSQL
+# -----------------------
+*.psql
+*.dump
+
+# -----------------------
+# IDE / Editor
+# -----------------------
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.iml
+.DS_Store
+
+# -----------------------
+# Mac / Linux
+# -----------------------
+*.swp
+*~
+.cache/
