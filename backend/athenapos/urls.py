@@ -23,6 +23,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/authentication/', include('apps.authentication.urls')),
     path('api/customers/', include('apps.customers.urls')),
+    path('api/products/', include('apps.products.urls')),
 
     # Swagger
     re_path(r'^swagger(?P<format>\.json|\.yaml)$', schema_view.without_ui(cache_timeout=0), name='schema-json'),

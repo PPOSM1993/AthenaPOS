@@ -32,6 +32,36 @@ class Publisher(models.Model):
         return self.name
 
 
+class Genre(models.Model):
+    """
+    Géneros de libros: Novela, Ciencia Ficción, Infantil, etc.
+    """
+    name = models.CharField(max_length=100, unique=True)
+
+    class Meta:
+        verbose_name = "Género"
+        verbose_name_plural = "Géneros"
+        ordering = ["name"]
+
+    def __str__(self):
+        return self.name
+
+
+class Format(models.Model):
+    """
+    Formato de productos: Físico, Digital, Audiolibro, etc.
+    """
+    name = models.CharField(max_length=100, unique=True)
+
+    class Meta:
+        verbose_name = "Formato"
+        verbose_name_plural = "Formatos"
+        ordering = ["name"]
+
+    def __str__(self):
+        return self.name
+
+
 class Product(models.Model):
     PRODUCT_TYPES = (
         ("book", "Libro"),
@@ -57,6 +87,11 @@ class Product(models.Model):
     language = models.CharField("Idioma", max_length=50, blank=True, null=True)
     pages = models.PositiveIntegerField("Número de páginas", blank=True, null=True)
     publication_date = models.DateField("Fecha de publicación", blank=True, null=True)
+
+    # Nuevos campos
+    genres = models.ManyToManyField(Genre, verbose_name="Géneros", blank=True)
+    formats = models.ManyToManyField(Format, verbose_name="Formatos", blank=True)
+
     stock = models.PositiveIntegerField("Stock", default=0)
     purchase_price = models.DecimalField(
         "Precio de compra", max_digits=10, decimal_places=2, default=0
