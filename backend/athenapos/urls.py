@@ -24,6 +24,10 @@ urlpatterns = [
     path('api/authentication/', include('apps.authentication.urls')),
     path('api/customers/', include('apps.customers.urls')),
     path('api/products/', include('apps.products.urls')),
+    path('api/sales/', include('apps.sales.urls')),
+    path('api/suppliers/', include('apps.suppliers.urls')),
+    path('api/inventory/', include('apps.inventory.urls')),
+    #path('api/reports/', include('apps.reports.urls')),
 
     # Swagger
     re_path(r'^swagger(?P<format>\.json|\.yaml)$', schema_view.without_ui(cache_timeout=0), name='schema-json'),

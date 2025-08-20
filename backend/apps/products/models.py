@@ -2,6 +2,20 @@ from django.db import models
 from apps.customers.models import Region  # si quieres relacionar promociones por región
 from django.core.validators import MinValueValidator, MaxValueValidator
 from stdnum import isbn  # Validación de ISBN chileno/internacional
+from isbn_field import ISBNField
+from django.core.exceptions import ValidationError
+
+
+def validate_isbn(value):
+    if not isbn.is_valid(value):
+        raise ValidationError("ISBN inválido.")
+
+class Author(models.Model):
+    name = models.CharField(max_length=255, unique=True)
+    bio = models.TextField(blank=True, null=True, max_length=6000)
+
+    def __str__(self):
+        return self.name
 
 
 class Category(models.Model):
@@ -82,7 +96,9 @@ class Product(models.Model):
         Publisher, on_delete=models.SET_NULL, null=True, blank=True
     )
     author = models.CharField("Autor", max_length=255, blank=True, null=True)
-    isbn = models.CharField("ISBN", max_length=20, blank=True, null=True, unique=True)
+    #isbn = models.CharField("ISBN", max_length=20, blank=True, null=True, unique=True)
+    isbn = ISBNField(unique=True)
+
     description = models.TextField("Descripción", blank=True, null=True)
     language = models.CharField("Idioma", max_length=50, blank=True, null=True)
     pages = models.PositiveIntegerField("Número de páginas", blank=True, null=True)

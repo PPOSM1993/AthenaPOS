@@ -44,6 +44,10 @@ INSTALLED_APPS = [
     'apps.authentication',
     'apps.products',
     'apps.customers',
+    'apps.sales',
+    'apps.suppliers',
+    'apps.inventory',
+    'apps.reports',
 ]
 
 REST_FRAMEWORK = {
