@@ -4,7 +4,8 @@ import { useAuthStore } from "../index"
 import {
   PrivateRoute,
   Login,
-  Dashboard
+  Dashboard,
+  Playground,
 } from "../index"
 
 export default function AppRouter() {
@@ -22,6 +23,7 @@ export default function AppRouter() {
           path="/dashboard" element={<Dashboard />}
         />
       </Route>
+      <Route path="/playground" element={<Playground />} />
 
     </Routes>
   )
