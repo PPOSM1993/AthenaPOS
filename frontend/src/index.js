@@ -1,5 +1,11 @@
 export { default as App } from './App';
 export { default as Button } from './components/atoms/Button';
+export * from './components/atoms/Incon';
+export * from './components/atoms/Input';
+export * from './components/atoms/Label';
+export * from './components/atoms/Loader';
+export * from './components/atoms/Spinner';
+export * from './components/atoms/Typography';
 export * from './hooks/useAuthStore';
 export * from './main';
 export { default as Dashboard } from './pages/Dashboard';
