@@ -5,7 +5,7 @@ import {
   PrivateRoute,
   Login,
   Dashboard,
-  Playground,
+  Playground
 } from "../index"
 
 export default function AppRouter() {
@@ -24,6 +24,7 @@ export default function AppRouter() {
         />
       </Route>
       <Route path="/playground" element={<Playground />} />
+
 
     </Routes>
   )
